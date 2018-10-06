@@ -1,0 +1,7 @@
+package com.example.rest.resource;
+
+public enum ValidationType {
+FAIL_ON_EMPTY_WORDS_COLLECTION,
+FAIL_ON_EMPTY_OR_NULL_WORD_WITHIN_COLLECTION,
+PASS, COLLECTION_IS_NOT_A_SET
+}

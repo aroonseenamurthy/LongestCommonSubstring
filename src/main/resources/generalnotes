@@ -1,0 +1,11 @@
+Development/General Information
+
+* This was a great coding excericse. Thoroughly loved developing it. Spent a considerable time over the weekend trying to figure out the algorithm for the LCS 
+when multiple substrings are involved. 
+* The test harness you requested for is within the same project underneath src/test/java with  14 test cases trying to cover most of the cases I could think of. I could have missed a few!
+* The above test harness needs to be run against a live server since a HTTP connection (8080) is established while running the JUNITs. To generate the WAR file I have placed 
+  an @Ignore on top of the harness so that mvn clean package works. I could have skipped tests while running maven but made it generic. Please remove @Ignore to make all the JUNITs pass.
+* In the past I have instantiated a Jetty Web Server and brought it up in memory using Maven, and then have the Jersey Servlet and Resources loaded in them. Later I had the JUnits run
+  against them in memory during Maven build and have them pass. At this moment, I am facing an issue with a Jetty/Maven configuration which I'm trying to resolve on local. I don't want to
+  miss the submission deadline of the weekend for this excercise. If this works by tomorrow morning, I will get back to you.
+   

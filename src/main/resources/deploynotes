@@ -1,0 +1,11 @@
+Environment notes : 
+This is a web-app project created with Mac OSX, Elicpse Luna, Java 8 Runtime, REST Jersey Jackson library,  Maven &  Tomcat server. 
+
+Steps for deployment :
+1) Install Maven & Tomcat server on your local. Set the classpath variables for M2_HOME and CATALINA_HOME appropriately.
+2) Build the project by running below maven goal : 
+     mvn clean pakcage -U  
+3) This should produce a WAR file within the target directory of the root folder of the project.
+4) Stop the Tomcat Server. Drop the WAR file from Step 3 within the webapps folder of Tomcat server.
+5) Start the Tomcat Server. Point the client to http://localhost:8080/lcs
+6) Run the test harness SuiteForHTTPLCSRESTTest JUNITs against the live server. Hope all test cases turn green!
